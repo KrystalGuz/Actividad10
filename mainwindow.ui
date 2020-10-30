@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>347</width>
-    <height>413</height>
+    <width>399</width>
+    <height>458</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,6 +15,9 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="1">
+     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+    </item>
     <item row="0" column="0">
      <widget class="QGroupBox" name="groupBox">
       <property name="title">
@@ -22,7 +25,14 @@
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="1" colspan="2">
-        <widget class="QSpinBox" name="Id_spinBox"/>
+        <widget class="QSpinBox" name="Id_spinBox">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+        </widget>
        </item>
        <item row="8" column="1" colspan="2">
         <widget class="QSpinBox" name="Green_spinBox">
@@ -90,6 +100,12 @@
            </disabled>
           </palette>
          </property>
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="maximum">
           <number>255</number>
          </property>
@@ -134,6 +150,12 @@
            </disabled>
           </palette>
          </property>
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Green:</string>
          </property>
@@ -141,6 +163,12 @@
        </item>
        <item row="4" column="1" colspan="2">
         <widget class="QSpinBox" name="DestinoY_spinBox">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="maximum">
           <number>500</number>
          </property>
@@ -148,16 +176,35 @@
        </item>
        <item row="0" column="0">
         <widget class="QLabel" name="Id">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Id:</string>
          </property>
         </widget>
        </item>
        <item row="5" column="1" colspan="2">
-        <widget class="QSpinBox" name="Velocidad_spinBox"/>
+        <widget class="QSpinBox" name="Velocidad_spinBox">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+        </widget>
        </item>
        <item row="2" column="1" colspan="2">
         <widget class="QSpinBox" name="OrigenY_spinBox">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="maximum">
           <number>500</number>
          </property>
@@ -202,6 +249,12 @@
            </disabled>
           </palette>
          </property>
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Color</string>
          </property>
@@ -209,6 +262,12 @@
        </item>
        <item row="3" column="1" colspan="2">
         <widget class="QSpinBox" name="DestinoX_spinBox">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="maximum">
           <number>500</number>
          </property>
@@ -252,6 +311,12 @@
             </colorrole>
            </disabled>
           </palette>
+         </property>
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
          </property>
          <property name="text">
           <string>Blue:</string>
@@ -297,6 +362,12 @@
            </disabled>
           </palette>
          </property>
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Red:</string>
          </property>
@@ -304,6 +375,12 @@
        </item>
        <item row="11" column="0" colspan="3">
         <widget class="QPushButton" name="AgregarInicio">
+         <property name="font">
+          <font>
+           <family>Broadway</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Agregar Inicio</string>
          </property>
@@ -314,6 +391,7 @@
          <property name="font">
           <font>
            <family>Broadway</family>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="cursor">
@@ -417,6 +495,12 @@
            </disabled>
           </palette>
          </property>
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="maximum">
           <number>255</number>
          </property>
@@ -424,6 +508,12 @@
        </item>
        <item row="4" column="0">
         <widget class="QLabel" name="DestinoY">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Destino en y:</string>
          </property>
@@ -431,6 +521,12 @@
        </item>
        <item row="5" column="0">
         <widget class="QLabel" name="Velocidad">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Velocidad:</string>
          </property>
@@ -438,6 +534,12 @@
        </item>
        <item row="2" column="0">
         <widget class="QLabel" name="OrigenY">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Origen en y:</string>
          </property>
@@ -445,6 +547,12 @@
        </item>
        <item row="1" column="1" colspan="2">
         <widget class="QSpinBox" name="OrigenX_spinBox">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="maximum">
           <number>500</number>
          </property>
@@ -452,6 +560,12 @@
        </item>
        <item row="3" column="0">
         <widget class="QLabel" name="DestinoX">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Destino en x:</string>
          </property>
@@ -459,6 +573,12 @@
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="OrigenX">
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Origen en x:</string>
          </property>
@@ -466,6 +586,12 @@
        </item>
        <item row="12" column="0" colspan="3">
         <widget class="QPushButton" name="Mostrar">
+         <property name="font">
+          <font>
+           <family>Broadway</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Mostrar</string>
          </property>
@@ -537,6 +663,12 @@
            </disabled>
           </palette>
          </property>
+         <property name="font">
+          <font>
+           <family>Rage Italic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="maximum">
           <number>255</number>
          </property>
@@ -545,9 +677,6 @@
       </layout>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QPlainTextEdit" name="plainTextEdit"/>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -555,12 +684,52 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>347</width>
+     <width>399</width>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+   </widget>
+   <addaction name="menuArchivo"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Script MT Bold</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Script MT Bold</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

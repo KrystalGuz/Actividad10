@@ -1,4 +1,4 @@
-from PySide2.QtWidgets import QMainWindow
+from PySide2.QtWidgets import QMainWindow, QFileDialog, QMessageBox
 from PySide2.QtCore import Slot
 from ui_mainwindow import Ui_MainWindow
 from AlmacenP import AlmacenDeParticulas
@@ -15,6 +15,55 @@ class MainWindow(QMainWindow):
         self.ui.AgregarFinal.clicked.connect(self.click_agregar)
         self.ui.AgregarInicio.clicked.connect(self.click_agregarInicio)
         self.ui.Mostrar.clicked.connect(self.click_mostrar)
+
+        self.ui.actionAbrir.triggered.connect(self.action_abrir_archivo)
+        self.ui.actionGuardar.triggered.connect(self.action_guardar_archivo)
+
+    @Slot()
+    def action_abrir_archivo(self):
+        #print('abrir_archivo')
+        ubication = QFileDialog.getOpenFileName(
+            self,
+            'Abrir Archivo',
+            '.',
+            'JSON (*.json)'
+        )[0]
+        if self.AlmacenP.abrir(ubication):
+            QMessageBox.information(
+                self,
+                "Exito",
+                "Se abrio el archivo " + ubication
+            )
+        else:
+            QMessageBox.critical(
+                self,
+                "Error",
+                "Eror al abrir el archivo" + ubication
+            )
+
+    @Slot()
+    def action_guardar_archivo(self):
+        #print('Guardar_archivo')
+        ubication = QFileDialog.getSaveFileName(
+            self,
+            'Guardar Archivo',
+            '.',
+            'JSON (*.json)'
+        )[0]
+        print(ubication)
+        if self.AlmacenP.guardar(ubication):
+            QMessageBox.information(
+                self,
+                "Exito",
+                "Se pudo crear el archivo" + ubication
+            )
+        else:
+            QMessageBox.critical(
+                self,
+                "Error",
+                "No se pudo crear el archivo" + ubication
+            )
+
 
     @Slot()
     def click_mostrar(self):
